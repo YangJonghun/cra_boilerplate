@@ -4,7 +4,7 @@ const allExtensions = jsExtensions.concat(tsExtensions);
 
 module.exports = {
   parser: '@typescript-eslint/parser',
-  plugins: ['@typescript-eslint', 'react'],
+  plugins: ['@typescript-eslint', 'react', 'react-hooks'],
   extends: ['plugin:@typescript-eslint/recommended', 'airbnb', 'prettier/@typescript-eslint', 'prettier'],
   env: {
     es6: true,
@@ -44,6 +44,8 @@ module.exports = {
     '@typescript-eslint/explicit-function-return-type': 0,
     '@typescript-eslint/explicit-member-accessibility': 0,
     'spaced-comment': ['error', 'always', { markers: ['/'] }],
+    'react-hooks/rules-of-hooks': 'error',
+    'react-hooks/exhaustive-deps': 'warn',
   },
   overrides: [
     {

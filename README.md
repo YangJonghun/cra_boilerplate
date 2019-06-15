@@ -4,6 +4,9 @@
 - lint
   - eslint (airbnb / react)
   - prettier
+- test
+  - jest-dom
+  - @testing-library/react
 - git hooks
   - husky
   - lint-staged

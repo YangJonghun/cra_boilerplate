@@ -12,7 +12,7 @@
   },
   "husky": {
     "hooks": {
-      "pre-commit": "yarn compile-check && lint-staged"
+      "pre-commit": "yarn compile-check && yarn test --no-watchAll && lint-staged"
     }
   },
   "lint-staged": {
@@ -22,6 +22,8 @@
     ]
   },
   "dependencies": {
+    "@testing-library/react": "^8.0.1",
+    "jest-dom": "^3.5.0",
     "react": "^16.8.6",
     "react-dom": "^16.8.6",
     "react-scripts": "3.0.1"

@@ -7,7 +7,19 @@
     "build": "react-scripts build",
     "test": "react-scripts test",
     "eject": "react-scripts eject",
+    "compile-check": "tsc --noEmit",
     "lint": "eslint --ignore-path .gitignore . --ext ts,tsx,js,jsx"
+  },
+  "husky": {
+    "hooks": {
+      "pre-commit": "yarn compile-check && lint-staged"
+    }
+  },
+  "lint-staged": {
+    "*.{js,ts,tsx,jsx}": [
+      "yarn lint --fix",
+      "git add"
+    ]
   },
   "dependencies": {
     "react": "^16.8.6",
@@ -22,6 +34,8 @@
     "eslint-config-airbnb": "^17.1.0",
     "eslint-config-prettier": "^4.3.0",
     "eslint-plugin-prettier": "^3.1.0",
+    "husky": "^2.4.1",
+    "lint-staged": "^8.2.1",
     "prettier": "^1.18.2",
     "typescript": "^3.5.2"
   },

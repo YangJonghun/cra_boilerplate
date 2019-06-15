@@ -10,6 +10,7 @@
 - git hooks
   - husky
   - lint-staged
+- absolute path import (with './src')
 
 ---
 

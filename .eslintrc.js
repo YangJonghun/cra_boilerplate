@@ -34,6 +34,7 @@ module.exports = {
     'import/resolver': {
       node: {
         extensions: allExtensions,
+        paths: ['src'],
       },
     },
   },

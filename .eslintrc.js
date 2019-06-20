@@ -46,6 +46,10 @@ module.exports = {
     'spaced-comment': ['error', 'always', { markers: ['/'] }],
     'react-hooks/rules-of-hooks': 'error',
     'react-hooks/exhaustive-deps': 'warn',
+    'import/no-extraneous-dependencies': [
+      'error',
+      { devDependencies: ['**/*.test.*', '**/*.spec.*', '**/*.stories.*', '**/*.story.*', '**/stories/*'] },
+    ],
   },
   overrides: [
     {

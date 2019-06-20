@@ -8,6 +8,9 @@
 - test
   - jest-dom
   - @testing-library/react
+- storybook
+  - addon-info
+  - addon-knobs
 - git hooks
   - husky
   - lint-staged

@@ -8,7 +8,9 @@
     "test": "react-scripts test",
     "eject": "react-scripts eject",
     "compile-check": "tsc --noEmit",
-    "lint": "eslint --ignore-path .gitignore . --ext ts,tsx,js,jsx"
+    "lint": "eslint --ignore-path .gitignore . --ext ts,tsx,js,jsx",
+    "storybook": "start-storybook -p 6006",
+    "build-storybook": "build-storybook"
   },
   "husky": {
     "hooks": {
@@ -23,6 +25,7 @@
   },
   "dependencies": {
     "@testing-library/react": "^8.0.1",
+    "babel-loader": "8.0.5",
     "jest-dom": "^3.5.0",
     "node-sass": "^4.12.0",
     "react": "^16.8.6",
@@ -32,18 +35,25 @@
     "react-scripts": "3.0.1"
   },
   "devDependencies": {
+    "@storybook/addon-info": "^5.1.9",
+    "@storybook/addon-knobs": "^5.1.9",
+    "@storybook/react": "^5.1.9",
     "@types/jest": "^24.0.14",
     "@types/node": "^12.0.8",
     "@types/node-sass": "^4.11.0",
     "@types/react": "^16.8.20",
     "@types/react-dom": "^16.8.4",
     "@types/react-router-dom": "^4.3.4",
+    "@types/storybook__addon-info": "^4.1.2",
+    "@types/storybook__addon-knobs": "^5.0.1",
+    "@types/storybook__react": "^4.0.2",
     "eslint-config-airbnb": "^17.1.0",
     "eslint-config-prettier": "^4.3.0",
     "eslint-plugin-prettier": "^3.1.0",
     "husky": "^2.4.1",
     "lint-staged": "^8.2.1",
     "prettier": "^1.18.2",
+    "react-docgen-typescript-loader": "^3.1.0",
     "typescript": "^3.5.2"
   },
   "eslintConfig": {

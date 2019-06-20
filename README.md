@@ -11,6 +11,7 @@
 - git hooks
   - husky
   - lint-staged
+- react-router-dom
 - absolute path import (with './src')
 - polyfills
 

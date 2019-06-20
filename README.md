@@ -14,6 +14,8 @@
 - react-router-dom
 - absolute path import (with './src')
 - polyfills
+- SASS
+
 
 ---
 

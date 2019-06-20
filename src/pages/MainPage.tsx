@@ -3,7 +3,7 @@ import { Link } from 'react-router-dom';
 
 import { Logo } from 'static/svgs';
 
-import styles from './MainPage.module.css';
+import styles from './MainPage.module.scss';
 
 const App: React.FC = () => {
   return (

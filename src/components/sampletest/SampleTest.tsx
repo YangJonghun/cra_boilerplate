@@ -1,6 +1,6 @@
 import React, { useState } from 'react';
 
-import './SampleTest.module.css';
+import './SampleTest.module.scss';
 
 export interface SampleTestProps {
   title: string;

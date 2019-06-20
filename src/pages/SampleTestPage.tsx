@@ -3,7 +3,7 @@ import { Link } from 'react-router-dom';
 
 import SampleTest from 'components/sampletest/SampleTest';
 
-import styles from './SampleTestPage.module.css';
+import styles from './SampleTestPage.module.scss';
 
 const Test: React.FC = () => (
   <div className={styles.row}>
